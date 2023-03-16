@@ -1,3 +1,8 @@
 node_modules
 .angular
 .angular/cache
+.idea
+*.js
+dist
+.env
+rest-api/logs
