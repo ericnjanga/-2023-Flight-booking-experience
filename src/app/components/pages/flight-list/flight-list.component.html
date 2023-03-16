@@ -1,0 +1,9 @@
+<header>
+    <h1>Select your departure</h1>
+</header>
+
+<section>
+    <ng-container *ngFor="let flight of flights">
+        <app-flight-card [flight]="flight"></app-flight-card>
+    </ng-container>
+</section>

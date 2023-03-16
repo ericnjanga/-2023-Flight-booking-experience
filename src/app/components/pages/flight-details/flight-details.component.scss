@@ -1,0 +1,14 @@
+@import '/src/assets/css/mixins.scss';
+@import '/src/assets/css/variables.scss';
+
+.hero {
+  padding-bottom: $section-gap;
+  .date {
+    display: block;
+    margin-bottom: 15px;
+  }
+}
+
+.mid {
+  margin-bottom: 40px;
+}

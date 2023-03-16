@@ -1,0 +1,10 @@
+@import '/src/assets/css/mixins.scss';
+@import '/src/assets/css/variables.scss';
+
+.price-and-airline {
+    display: flex;
+    flex-direction: column;
+    height: 70px;
+    justify-content: space-between;
+    padding-bottom: $section-gap;
+}

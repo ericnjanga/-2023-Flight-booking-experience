@@ -1,0 +1,55 @@
+@import '/src/assets/css/mixins.scss';
+
+.app-bar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+app-site-map-navigator {
+    position: fixed;
+    top: 65px;
+    margin-right: 20px;
+    @include app-background();
+    z-index: 10;
+}
+
+.page-wrapper {
+    position: relative;
+    padding: 120px 20px 20px 20px;
+    height: 100vh;
+    @include app-background();
+}
+
+
+
+
+
+
+
+
+
+
+
+
+// .app-bar {
+//     text-align: center;
+//     justify-content: center;
+
+//     .app-bar--action-btn {
+//         position: absolute;
+//         left: 20px;
+//     }
+
+//     .app-bar--container {
+//         display: flex;
+//         flex-direction: column;
+//     }
+//     .app-bar--primary-info {
+//         @include type-subtitle1();
+//     }
+//     .app-bar--secondary-info {
+//         @include type-caption();
+//     }
+// }

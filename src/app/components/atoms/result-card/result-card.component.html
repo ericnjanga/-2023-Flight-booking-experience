@@ -1,0 +1,34 @@
+<div class="container">
+  <div class="result-container">
+    <mat-card *ngFor="let i of [1,2,3,4,5,6,7,8,9]">
+      <mat-card-content>
+        <div class="flex flex__jcsb flex__align-center">
+          <div class="departure flex flex__jcsb flex__align-center">
+            <span matCardTitle>DLA</span>
+            <mat-icon class="grey-text plane">flight</mat-icon>
+            <span matCardTitle>YDE</span>
+          </div>
+          <div class="ticket-price" matCardSubTitle>
+            <span class="price">{{143700 | number: '1.2-2'}} <span class="currency-name">FCFA</span> </span>
+            <!-- <span class="currency">FCFA</span> -->
+          </div>
+        </div>
+        <div class="flex flex__jcsb flex__align-center">
+          <app-time></app-time>
+          <app-time></app-time>
+          <span>Camair-co</span>
+        </div>
+        <div class="flex flex__jcsb flex__align-center grey-text">
+          <div class="flex flex__align-center duration">
+            <mat-icon class="clock">schedule</mat-icon>
+            <span>45min</span>
+            <span class="stops">Direct</span>
+          </div>
+          <span>Economy</span>
+        </div>
+        <!-- <div class="flex flex__jcsb flex__align-center grey-text-italic">
+        </div> -->
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>

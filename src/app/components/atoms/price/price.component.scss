@@ -1,0 +1,13 @@
+
+@import '/src/assets/css/mixins.scss';
+
+.flight-price__digit {
+    margin-right: 2px;
+    color: $secondary1;
+    @include type-body1();
+}
+
+.flight-price__currency {
+    color: $mid-neutral1;
+    @include type-caption();
+}

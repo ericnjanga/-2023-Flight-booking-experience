@@ -1,0 +1,24 @@
+<div [ngClass]="{'flight-time':true, 'isHighlighted': isHighlighted}">
+    <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg"
+        class="icon">
+        <g clip-path="url(#clip0_1178_12256)">
+            <path
+                d="M1.08317 7.00016C1.08317 9.99171 3.50829 12.4168 6.49984 12.4168C9.49138 12.4168 11.9165 9.99171 11.9165 7.00016C11.9165 4.00862 9.49138 1.5835 6.49984 1.5835C3.50829 1.5835 1.08317 4.00862 1.08317 7.00016Z"
+                fill="transparent" stroke="currentcolor" stroke-width="1.69" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M9.75049 7L6.50049 7L5.41715 9.16667" stroke="currentcolor" stroke-width="1.69" stroke-linecap="round"
+                stroke-linejoin="round" />
+        </g>
+        <defs>
+            <clipPath id="clip0_1178_12256">
+                <rect width="13" height="13" fill="transparent" transform="translate(13 0.5) rotate(90)" />
+            </clipPath>
+        </defs>
+    </svg>
+
+
+    <div class="digits">
+        <ng-content></ng-content>
+    </div>
+
+    <span class="label">min</span>
+</div>

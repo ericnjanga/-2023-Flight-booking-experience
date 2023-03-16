@@ -1,0 +1,121 @@
+<header class="hero">
+  <app-flight-date class="date"></app-flight-date>
+  <app-departure-city-to-arrival-city [isHighlighted]=true [isLarge]=true></app-departure-city-to-arrival-city>
+  <app-departure-airport-to-arrival-airport></app-departure-airport-to-arrival-airport>
+</header>
+
+<app-prince-and-airline class="mid"></app-prince-and-airline>
+
+<app-level-navigation>About your trip</app-level-navigation>
+<app-level-navigation>Standard economic</app-level-navigation>
+
+<footer>
+  <button mat-raised-button color="primary">Primary</button>
+</footer>
+
+
+
+
+
+<!-- 
+    <div class="title">
+      <div matCardTitle>
+        Douala to Yaoundé
+      </div>
+      <div>August 27, 2023 / 3 travelers</div>
+    </div>
+    <ng-template [ngTemplateOutlet]="flightDetails"></ng-template>
+
+
+    <div class="continue-button">
+      <button mat-flat-button color="primary" aria-label="continue" [routerLink]="['/trip-review']">continue<mat-icon matSuffix
+          aria-label="arrow-right">trending_flat</mat-icon></button>
+    </div>
+
+
+<ng-template #flightDetails>
+  <div class="details">
+    <div class="flex flex__jcsb flex__align-center itinerary">
+      <span>DLA</span>
+      <span><mat-icon class="plane">flight</mat-icon></span>
+      <span>NSI</span>
+    </div>
+    <div class="flex flex__jcsb flex__align-center">
+      <span>Douala airport</span>
+      <span>Nsimalen airport</span>
+    </div>
+    <div class="flex flex__jcsb flex__align-center">
+      <app-time></app-time>
+      <app-time></app-time>
+    </div>
+    <mat-divider></mat-divider>
+    <div matCardSubtitle class="price">{{147000 | number:'1.2-2'}} <span class="currency-name">FCFA</span></div>
+    <div class="font-grey">Camair-co</div>
+    <mat-divider></mat-divider>
+    <div class="flex flex__jcsb">
+      <button mat-button [disableRipple]="true" (click)="showAdditionalTripInfo(true)" class="additional-flight-info">About your trip</button>
+      <mat-icon>chevron_right</mat-icon>
+    </div>
+    <mat-divider></mat-divider>
+    <div class="flex flex__jcsb">
+      <button mat-button (click)="showAdditionalTripInfo(false)" class="additional-flight-info">Standard economic</button>
+      <mat-icon>chevron_right</mat-icon>
+    </div>
+
+
+    
+    <mat-accordion>
+      <mat-expansion-panel #tripDetails class="trip-details">
+        <mat-expansion-panel-header>
+          <mat-panel-description>
+            <span>About your trip</span>
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+        <div class="flex flex__column flex__gap-1">
+          <div class="flex flex__gap-1">
+            <mat-icon>flight_takeoff</mat-icon>
+            <div>
+              <div>07:00 am - Douala</div>
+              <div>Douala airport</div>
+              <div>45 min</div>
+              <div>Camair-co</div>
+              <div>Standard economic</div>
+            </div>
+          </div>
+          <div class="flex flex__gap-1">
+            <mat-icon>flight_land</mat-icon>
+            <div>
+              <div>07:45 am - Yaounde</div>
+              <div>Nsimalen airport</div>
+            </div>
+          </div>
+        </div>
+      </mat-expansion-panel>
+      <mat-divider></mat-divider>
+      <mat-expansion-panel #tripDetails class="trip-details">
+        <mat-expansion-panel-header>
+          <mat-panel-description>
+            <span>Standard economic</span>
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+        <div class="flex flex__gap-2">
+          <div>
+            <div>Carry on:</div>
+            <div>Luggage 1:</div>
+            <div>Luggage 2:</div>
+          </div>
+          <div>
+            <div>Free</div>
+            <div>{{12000 | number:'1.2-2'}} <span class="currency-name">FCFA</span></div>
+            <div>{{17000 | number:'1.2-2'}} <span class="currency-name">FCFA</span></div>
+          </div>
+        </div>
+      </mat-expansion-panel>
+    </mat-accordion>
+  
+  
+  
+  </div>
+
+
+</ng-template> -->

@@ -1,0 +1,26 @@
+
+@import '/src/assets/css/mixins.scss';
+@import '/src/assets/css/variables.scss';
+
+.flight-time {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $mid-neutral1;
+    @include type-caption();
+
+    &.isHighlighted,
+    &.isHighlighted .icon {
+        color: $primary;
+    }
+}
+
+.icon {
+    width: 13px;
+}
+
+.icon,
+.digits {
+    display: inline-block;
+    margin-right: 3px;
+}

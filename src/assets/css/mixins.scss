@@ -1,0 +1,70 @@
+@import '/src/assets/css/variables.scss';
+
+
+/**
+ * Types
+ */
+@mixin type-h2() {
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 72px;
+}
+@mixin type-h2($line-height: 72px) {
+    font-weight: 400;
+    font-size: 60px;
+    line-height: $line-height;
+}
+
+@mixin type-body1() {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+@mixin type-body2() {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+@mixin type-button() {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 14px;
+}
+
+@mixin type-subtitle1() {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+@mixin type-caption {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+}
+
+@mixin app-background {
+    background-color: $light-neutral2;
+}
+
+
+@mixin card {
+    box-shadow: 0px 2px 3px #BFC0D1;
+}
+
+
+
+@mixin page-bottom-padding-for-footer-cta-bar {
+    padding-bottom: 250px;
+}
+
+@mixin footer-cta-bar {
+    position: fixed;
+    bottom: 0;
+    height: 200px;
+    width: 100%;
+    left: 0;
+    background: #ccc;
+}

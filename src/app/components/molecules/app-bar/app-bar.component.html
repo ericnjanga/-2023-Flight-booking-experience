@@ -1,0 +1,20 @@
+<mat-toolbar class="app-bar" color="primary">
+    <div class="app-bar__wrapper">
+        <div class="block-left">
+            <button mat-icon-button class="app-bar--action-btn" aria-label="Example icon-button with menu icon">
+                <mat-icon>{{iconLeft}}</mat-icon>
+            </button>
+        </div>
+        <div class="block-mid">
+            <div class="app-bar--container">
+                <div class="app-bar--primary-info">{{ title }}</div>
+                <div class="app-bar--secondary-info">{{ subTitle }}</div>
+            </div>
+        </div>
+        <div class="block-right">
+            <button *ngIf="iconRight" mat-icon-button class="app-bar--action-btn" aria-label="Example icon-button with menu icon">
+                <mat-icon>{{iconRight}}</mat-icon>
+            </button>
+        </div>
+    </div>
+</mat-toolbar>

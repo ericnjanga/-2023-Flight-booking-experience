@@ -1,0 +1,155 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import './assets/css/typography.scss';
+@import './assets/css/variables.scss';
+@import './assets/css/mixins.scss';
+@import url(https://fonts.googleapis.com/icon?family=Material+Icons);
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  color: $dark-neutral3;
+}
+* {
+  box-sizing: border-box;
+}
+
+
+
+
+mat-form-field {
+  width: 100%;
+}
+
+form {
+margin-top: 20px;
+}
+
+
+
+
+
+/**
+ * Text-fields
+ * --------------------------------------
+*/
+.mdc-text-field--filled:not(.mdc-text-field--disabled) {
+  background: #fff;
+}
+.mat-mdc-form-field-infix {
+  .tch-button__icon {
+    position: absolute;
+    top: 15px;
+  }
+  .mdc-floating-label {
+    padding-left: 30px;
+  }
+}
+
+
+
+
+
+/**
+ * Buttons
+ * --------------------------------------
+*/
+.tch-button {
+  border-width: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 46px;
+  border-radius: 4px;
+  background-color: $primary;
+
+  &.tch-full-width {
+    width: 100%;
+  }
+
+  .tch-button__label {
+      display: flex;
+      align-items: center;
+      color: #fff;
+      @include type-button();
+  }
+
+  .tch-button__icon {
+    margin-left: 15px;
+  }
+}
+
+
+// *.flex {
+//   display: flex;
+
+//   &__jcc {
+//     justify-content: center;
+//   }
+
+//   &__align-center {
+//     align-items: center;
+//   }
+
+//   &__column {
+//     flex-direction: column;
+//   }
+
+//   &__jcsb {
+//     justify-content: space-between;
+//   }
+
+//   &__jcse {
+//     justify-content: space-evenly;
+//   }
+
+//   &__jcsa {
+//     justify-content: space-around;
+//   }
+
+//   &__gap-1 {
+//     gap: 1rem;
+//   }
+
+//   &__gap-2 {
+//     gap: 2rem;
+//   }
+// }
+
+.container {
+  height: 100%;
+  width: 100%;
+  padding: 1rem;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.text-wrap {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  min-width: 2em;
+}
+
+.plane {
+  transform: rotate(90deg);
+}
+
+.price {
+  color: orange;
+  font-size: large;
+}
+
+.currency-name {
+  color: grey;
+  font-size: small;
+}
+
+.font-grey {
+  color: grey;
+}

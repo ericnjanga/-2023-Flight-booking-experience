@@ -1,0 +1,43 @@
+
+@import '/src/assets/css/mixins.scss';
+
+.mdc-card {
+    margin: 10px 0px;
+    @include card();
+}
+
+.flight-card__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flight-card__left-panel {
+    width: 150px;
+}
+.flight-card__right-panel {
+    margin-left: auto;
+}
+
+.flight-card__time {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flight-card__duration {
+    display: block;
+}
+
+.flight-card__time,
+.flight-card__duration {
+    margin-bottom: 4px;
+}
+
+.flight-card__time__depart {
+    // width: 112px;
+}
+
+
+.flight-card__class {
+    color: $mid-neutral1;
+    @include type-caption();
+}

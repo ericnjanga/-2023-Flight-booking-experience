@@ -1,0 +1,108 @@
+<div class="sheet-container">
+  <button mat-icon-button class="close-button" (click)="close()"><mat-icon>close</mat-icon></button>
+  <div class="title">
+    <div matCardTitle>
+      Douala to Yaoundé
+    </div>
+    <div>August 27, 2023 / 3 travelers</div>
+  </div>
+  <div class="flex flex__column flex__gap-2" *ngIf="showFlightDetails === 'services'">
+    <div matCardTitle class="flex bold">Standard economic</div>
+    <div class="flex flex__gap-2">
+      <div>
+        <div>Carry on:</div>
+        <div>Luggage 1:</div>
+        <div>Luggage 2:</div>
+      </div>
+      <div>
+        <div>Free</div>
+        <div>{{12000 | number:'1.2-2'}} <span class="currency-name">FCFA</span></div>
+        <div>{{17000 | number:'1.2-2'}} <span class="currency-name">FCFA</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="flex flex__column flex__gap-2" *ngIf="showFlightDetails === 'trip'">
+    <div matCardTitle class="flex">About your trip</div>
+    <div class="flex flex__gap-2">
+      <mat-icon class="airplane-icon">flight_takeoff</mat-icon>
+      <div>
+        <div>07:00 am - Douala</div>
+        <div>Douala airport</div>
+        <div>45 min</div>
+        <div>Camair-co</div>
+        <div>Standard economic</div>
+      </div>
+    </div>
+    <div class="flex flex__gap-2">
+      <mat-icon class="airplane-icon">flight_land</mat-icon>
+      <div>
+        <div>07:45 am - Yaounde</div>
+        <div>Nsimalen airport</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="passenger-form flex__gap-1" *ngIf="showFlightDetails === 'passengers'">
+    <div matCardTitle>Travelers Information</div>
+      <div>
+        <div>
+          <span matCardSubtitle>Full name:</span>
+          <span class="bold">Paul Biya</span>
+        </div>
+        <div>
+          <span matCardSubtitle>Gender:</span>
+          <span class="bold">Male</span>
+        </div>
+        <div>
+          <span matCardSubtitle>Date of birth:</span>
+          <span class="bold">1900 weeeeh</span>
+        </div>
+      </div>
+      <mat-divider></mat-divider>
+      <div>
+        <div>
+          <span matCardSubtitle>Full name:</span>
+          <span class="bold">Chantou Biya</span>
+        </div>
+        <div>
+          <span matCardSubtitle>Gender:</span>
+          <span class="bold">Female</span>
+        </div>
+        <div>
+          <span matCardSubtitle>Date of birth:</span>
+          <span class="bold">1900 weeeeh</span>
+        </div>
+      </div>
+      <mat-divider></mat-divider>
+      <div>
+        <div>
+          <span matCardSubtitle>Full name:</span>
+          <span class="bold">Frank Biya</span>
+        </div>
+        <div>
+          <span matCardSubtitle>Gender:</span>
+          <span class="bold">Male</span>
+        </div>
+        <div>
+          <span matCardSubtitle>Date of birth:</span>
+          <span class="bold">1900 weeeeh</span>
+        </div>
+      </div>
+
+    <div matCardTitle>Booking contact</div>
+    <div>
+      <span matCardSubtitle>Phone number: </span>
+      <span class="bold">699559911</span>
+    </div>
+    <div>
+      <span matCardSubtitle>Country: </span>
+      <span class="bold">Cameroon</span>
+    </div>
+    <div>
+      <span matCardSubtitle>Email: </span>
+      <span class="bold">alhadji@gmail.com</span>
+    </div>
+  </div>
+
+</div>

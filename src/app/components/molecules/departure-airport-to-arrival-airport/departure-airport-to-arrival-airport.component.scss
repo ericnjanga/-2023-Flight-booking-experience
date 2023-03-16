@@ -1,0 +1,24 @@
+@import '/src/assets/css/mixins.scss';
+@import '/src/assets/css/variables.scss';
+
+.dept-to-arr-airport {
+    display: flex;
+    padding-bottom: $section-gap;
+    border-bottom: 1px solid $mid-neutral2;
+
+    &__item {
+        flex: 1;
+
+        &.item2 {
+            text-align: right;
+        }
+    }
+}
+
+.airport-label {
+    @include type-body2();
+
+    &.isHighlighted {
+        color: $primary;
+    }
+}

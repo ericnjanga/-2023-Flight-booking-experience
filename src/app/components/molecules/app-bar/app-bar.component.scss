@@ -1,0 +1,21 @@
+.app-bar__wrapper {
+    display: flex;
+    flex: 1;
+
+    .block-left,
+    .block-mid,
+    .block-right {
+        border: 1px solid turquoise;
+        height: 48px;
+    }
+
+    .block-left,
+    .block-right {
+        width: 48px;
+    }
+
+    .block-mid {
+        flex-grow: 1;
+        text-align: center;
+    }
+}

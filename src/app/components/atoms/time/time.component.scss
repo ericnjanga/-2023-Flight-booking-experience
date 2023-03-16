@@ -1,0 +1,10 @@
+
+@import '/src/assets/css/mixins.scss';
+
+.flight-time {
+    @include type-body2();
+}
+.flight-time__label {
+    color: $mid-neutral1;
+    @include type-caption();
+}

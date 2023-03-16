@@ -1,0 +1,52 @@
+@import '/src/assets/css/mixins.scss';
+@import '/src/assets/css/variables.scss';
+
+.wrapper {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+
+    &.isLarge {
+        align-items:flex-end;
+        margin-bottom: 20px;
+
+        // Correct positionning
+        .city-from {
+            left: -5px;
+        }
+        .city-to {
+            right: -5px;
+        }
+
+        .timing {
+            position: relative;
+            top: 15px;
+
+            .duration svg {
+                color: $primary;
+            }
+        }
+    } // isLarge ---------------
+
+    .city-from,
+    .city-to {
+        position: relative;
+        display: inline-block;
+        color: $dark-neutral2;
+        @include type-body1();
+
+        &.isHighlighted {
+            color: $primary;
+        }
+    
+        &.isLarge {
+            @include type-h2(46px);
+        }
+    }
+} // wrapper ---------------
+
+.timing {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

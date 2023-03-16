@@ -1,0 +1,15 @@
+@import '/src/assets/css/mixins.scss';
+
+
+.level-navigation {
+    display: flex;
+    flex: 1;
+    height: 44px;
+    align-items: center;
+    border-top: 1px solid $mid-neutral2;
+}
+.level-navigation__bar {
+    flex: 1;
+    color: $dark-neutral2;
+    @include type-subtitle1();
+}

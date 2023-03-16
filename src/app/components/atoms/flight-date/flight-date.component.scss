@@ -1,0 +1,7 @@
+@import '/src/assets/css/mixins.scss';
+@import '/src/assets/css/variables.scss';
+
+.flight-date {
+    text-align: right;
+    @include type-body2();
+}

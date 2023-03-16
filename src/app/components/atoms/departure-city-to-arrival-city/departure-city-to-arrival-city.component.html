@@ -1,0 +1,8 @@
+<div [ngClass]="{'wrapper': true, 'isLarge': isLarge }">
+  <span [ngClass]="{'city-from': true, 'isLarge': isLarge, 'isHighlighted': isHighlighted }">DLA</span>
+  <div class="timing">
+    <app-icon-plane class="plane-icon" [highlighted]=isHighlighted></app-icon-plane>
+    <app-flight-duration class="duration" [isHighlighted]=isHighlighted>45</app-flight-duration>
+  </div>
+  <span [ngClass]="{'city-to': true, 'isLarge': isLarge, 'isHighlighted': isHighlighted }">NSI</span>
+</div>

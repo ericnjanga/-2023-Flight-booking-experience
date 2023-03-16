@@ -1,0 +1,14 @@
+<header>
+    <h1>Title.</h1>
+</header>
+
+<section>
+    <p>Description.</p>
+
+    <button class="btn-search" mat-fab color="primary" aria-label="Search for flights">
+        <mat-icon>search</mat-icon>
+    </button>
+    <ng-container *ngFor="let flight of flights">
+        <app-flight-card [flight]="flight"></app-flight-card>
+    </ng-container>
+</section>

@@ -1,0 +1,10 @@
+@import '/src/assets/css/mixins.scss';
+
+
+.page {
+  padding-bottom: 250px;
+}
+
+.footer {
+  @include footer-cta-bar();
+}

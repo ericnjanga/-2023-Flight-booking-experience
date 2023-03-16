@@ -1,0 +1,12 @@
+<mat-card [routerLink]="['/flight-details']">
+  <mat-card-content>
+    <header class="hero">
+      <app-flight-date></app-flight-date>
+      <app-departure-city-to-arrival-city class="dpt" [isHighlighted]=true></app-departure-city-to-arrival-city>
+      <app-departure-airport-to-arrival-airport [isHighlighted]=true></app-departure-airport-to-arrival-airport>
+    </header>
+    <app-prince-and-airline></app-prince-and-airline>
+    <app-level-navigation>About your trip</app-level-navigation>
+    <app-level-navigation>Standard economic</app-level-navigation>
+  </mat-card-content>
+</mat-card>

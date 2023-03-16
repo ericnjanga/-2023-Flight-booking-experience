@@ -1,0 +1,29 @@
+<mat-card *ngIf="flight" [routerLink]="['/flight-details']">
+    <mat-card-content>
+        <div class="flight-card__wrapper">
+            <div class="flight-card__left-panel">
+                <app-departure-city-to-arrival-city></app-departure-city-to-arrival-city>
+                <div class="flight-card__time">
+                    <app-time class="flight-card__time__depart"></app-time>
+                    <app-time class="flight-card__time__arrival"></app-time>
+                </div>
+                <div class="flight-card__class">
+                    Full-Economy / Direct flight
+                </div>
+            </div>
+            <app-prince-and-airline [price]="flight.price" class="flight-card__right-panel"></app-prince-and-airline>
+        </div>
+    </mat-card-content>
+</mat-card>
+
+
+
+<!-- 
+id: number;
+departureCity: string;
+departureDate: string;
+arrivalCity: string;
+arrivalDate: string;
+price: number;
+airline: string;
+duration: string; -->

@@ -1,0 +1,57 @@
+
+<button mat-icon-button class="close-button" mat-dialog-close><mat-icon>home</mat-icon></button>
+<div class="container">
+  <div class="content-container">
+    <div class="title">
+      <div matCardTitle>
+        Douala to Yaoundé
+      </div>
+      <div>Booking successful</div>
+    </div>
+    <ng-template [ngTemplateOutlet]="flightDetails"></ng-template>
+  </div>
+</div>
+
+<ng-template #flightDetails>
+  <div class="details">
+    <h2 matCardTitle>Booking successful!</h2>
+    <div [style.fontSize]="'small'">August 27, 2023</div>
+    <div class="flex flex__jcsb flex__align-center itinerary">
+      <span>DLA</span>
+      <span><mat-icon class="plane">flight</mat-icon></span>
+      <span>NSI</span>
+    </div>
+    <div class="flex flex__jcsb flex__align-center">
+      <span>Douala airport</span>
+      <span>Nsimalen airport</span>
+    </div>
+    <div class="flex flex__jcsb flex__align-center">
+      <app-time></app-time>
+      <app-time></app-time>
+    </div>
+    <mat-divider></mat-divider>
+    <div class="flex flex__align-center grey">
+      <mat-icon class="clock">schedule</mat-icon>
+      <span>45min</span>
+    </div>
+    <div>Camair-co</div>
+    <div matCardSubtitle class="price">{{147000 | number:'1.2-2'}} <span class="currency-name">FCFA</span></div>
+    <mat-divider></mat-divider>
+    <div class="flex flex__jcsb">
+      <button mat-button [disableRipple]="true" (click)="showAdditionalTripInfo('trip')" class="additional-flight-info">About your trip</button>
+      <mat-icon>chevron_right</mat-icon>
+    </div>
+    <mat-divider></mat-divider>
+    <div class="flex flex__jcsb">
+      <button mat-button (click)="showAdditionalTripInfo('services')" class="additional-flight-info">Standard economic</button>
+      <mat-icon>chevron_right</mat-icon>
+    </div>
+    <mat-divider></mat-divider>
+    <div class="flex flex__jcsb">
+      <button mat-button (click)="showAdditionalTripInfo('passengers')" class="additional-flight-info">Travelers information</button>
+      <mat-icon>chevron_right</mat-icon>
+    </div>
+  </div>
+
+
+</ng-template>

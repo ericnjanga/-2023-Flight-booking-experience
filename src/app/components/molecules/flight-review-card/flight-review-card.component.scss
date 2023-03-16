@@ -1,0 +1,10 @@
+@import '/src/assets/css/mixins.scss';
+@import '/src/assets/css/variables.scss';
+
+.hero {
+  padding-bottom: $section-gap;
+  .dpt {
+    position: relative;
+    top: 16px;
+  }
+}
