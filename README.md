@@ -1,4 +1,15 @@
-# Tcholli
+# 2023-Flight-booking-experience
+
+
+## About this project ----------------------------
+(Coming soon)
+
+
+## Application features --------------------------
+(Coming soon)
+
+
+## Development Instructions ----------------------
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.4.
 
