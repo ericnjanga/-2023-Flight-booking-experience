@@ -1,0 +1,44 @@
+/**
+ * MATERIAL UI OVERRIDES
+ * -----------------------------------------------------
+*/
+
+// Every form fields
+mat-form-field {
+    width: 100%;
+}
+
+
+
+
+
+
+
+/**
+ * Text-fields
+ * --------------------------------------
+*/
+.mdc-text-field--filled:not(.mdc-text-field--disabled) {
+    background: #fff;
+}
+
+.mat-mdc-form-field-infix {
+    .tch-button__icon {
+        position: absolute;
+        top: 19px;
+    }
+
+    .mdc-floating-label.mdc-floating-label--float-above {
+        padding-left: 40px;
+    }
+
+    .mdc-floating-label:not(.mdc-floating-label--float-above) {
+        padding-left: 30px;
+    }
+
+    .mat-mdc-select-value-text,
+    .mdc-text-field__input {
+        padding-left: 30px;
+    }
+}
+

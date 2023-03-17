@@ -1,17 +1,9 @@
-
-
-
 <mat-tab-group>
   <mat-tab label="One way">
-    
+
     <form class="form-one-way">
       <mat-form-field appearance="fill">
-
-        <svg class="tch-button__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M19.9395 11.75H21.1469L20.293 10.8964L15.5726 6.17742C15.5725 6.1774 15.5725 6.17738 15.5725 6.17736C15.5255 6.13031 15.4991 6.0665 15.4991 5.99997C15.4991 5.93341 15.5255 5.86959 15.5726 5.82252C15.6196 5.77546 15.6834 5.74902 15.75 5.74902C15.8166 5.74902 15.8804 5.77546 15.9274 5.82252L21.9274 11.8225L21.9279 11.823C21.9512 11.8462 21.9696 11.8738 21.9823 11.9042C21.9949 11.9345 22.0013 11.9671 22.0013 12C22.0013 12.0329 21.9949 12.0654 21.9823 12.0958C21.9696 12.1262 21.9512 12.1537 21.9279 12.177L21.9274 12.1774L15.9274 18.1774C15.8804 18.2245 15.8166 18.2509 15.75 18.2509C15.6834 18.2509 15.6196 18.2245 15.5726 18.1774C15.5255 18.1304 15.4991 18.0665 15.4991 18C15.4991 17.9334 15.5255 17.8696 15.5725 17.8226C15.5725 17.8226 15.5725 17.8225 15.5726 17.8225L20.293 13.1036L21.1469 12.25H19.9395H2.25C2.1837 12.25 2.12011 12.2236 2.07322 12.1767C2.02634 12.1299 2 12.0663 2 12C2 11.9337 2.02634 11.8701 2.07322 11.8232C2.12011 11.7763 2.1837 11.75 2.25 11.75H19.9395Z" fill="white" stroke="turquoise"/>
-        </svg>
-
-
+        <app-icon class="tch-button__icon" name="map"></app-icon>
         <mat-label>Flying from</mat-label>
         <mat-select>
           <mat-option value="one">Maroua</mat-option>
@@ -24,6 +16,7 @@
       </mat-form-field>
 
       <mat-form-field appearance="fill">
+        <app-icon class="tch-button__icon" name="map"></app-icon>
         <mat-label>Flying to</mat-label>
         <mat-select>
           <mat-option value="one">Maroua</mat-option>
@@ -35,35 +28,31 @@
         </mat-select>
       </mat-form-field>
 
-
-
       <mat-form-field>
+        <app-icon class="tch-button__icon" name="date"></app-icon>
         <mat-label>Departure date</mat-label>
         <input matInput [matDatepicker]="departurePicker1" readonly formControlName="departureDate"
           (click)="departurePicker1.open()" [min]="today">
-        <mat-datepicker-toggle matSuffix [for]="departurePicker1"></mat-datepicker-toggle>
         <mat-datepicker #departurePicker1></mat-datepicker>
       </mat-form-field>
 
       <mat-form-field class="example-full-width">
+        <app-icon class="tch-button__icon" name="user"></app-icon>
         <mat-label>Number of passengers</mat-label>
         <input matInput placeholder="" value="">
       </mat-form-field>
 
       <mat-form-field class="example-full-width">
+        <app-icon class="tch-button__icon" name="briefcase"></app-icon>
         <mat-label>Class</mat-label>
         <input matInput placeholder="" value="">
       </mat-form-field>
 
-
-
       <footer>
-        <button class="tch-button tch-full-width">
+        <button class="tch-button tch-button-icon tch-full-width">
           <span class="tch-button__label">See results</span>
-        
-          <svg class="tch-button__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M19.9395 11.75H21.1469L20.293 10.8964L15.5726 6.17742C15.5725 6.1774 15.5725 6.17738 15.5725 6.17736C15.5255 6.13031 15.4991 6.0665 15.4991 5.99997C15.4991 5.93341 15.5255 5.86959 15.5726 5.82252C15.6196 5.77546 15.6834 5.74902 15.75 5.74902C15.8166 5.74902 15.8804 5.77546 15.9274 5.82252L21.9274 11.8225L21.9279 11.823C21.9512 11.8462 21.9696 11.8738 21.9823 11.9042C21.9949 11.9345 22.0013 11.9671 22.0013 12C22.0013 12.0329 21.9949 12.0654 21.9823 12.0958C21.9696 12.1262 21.9512 12.1537 21.9279 12.177L21.9274 12.1774L15.9274 18.1774C15.8804 18.2245 15.8166 18.2509 15.75 18.2509C15.6834 18.2509 15.6196 18.2245 15.5726 18.1774C15.5255 18.1304 15.4991 18.0665 15.4991 18C15.4991 17.9334 15.5255 17.8696 15.5725 17.8226C15.5725 17.8226 15.5725 17.8225 15.5726 17.8225L20.293 13.1036L21.1469 12.25H19.9395H2.25C2.1837 12.25 2.12011 12.2236 2.07322 12.1767C2.02634 12.1299 2 12.0663 2 12C2 11.9337 2.02634 11.8701 2.07322 11.8232C2.12011 11.7763 2.1837 11.75 2.25 11.75H19.9395Z" fill="turquoise" stroke="turquoise"/>
-            </svg>
+
+          <app-icon class="tch-button__icon" name="arrow-right"></app-icon>
         </button>
       </footer>
 
@@ -71,53 +60,68 @@
   </mat-tab>
 
   <mat-tab label="Round trip">
-    
+
     <form class="form-round-trip">
-      <mat-form-field class="example-full-width">
+      <mat-form-field appearance="fill">
+        <app-icon class="tch-button__icon" name="map"></app-icon>
         <mat-label>Flying from</mat-label>
-        <input matInput placeholder="" value="">
+        <mat-select>
+          <mat-option value="one">Maroua</mat-option>
+          <mat-option value="one">Garoua</mat-option>
+          <mat-option value="one">Ngaoundere</mat-option>
+          <mat-option value="one">Douala</mat-option>
+          <mat-option value="two">Yaounde</mat-option>
+          <mat-option value="two">Bafoussam</mat-option>
+        </mat-select>
       </mat-form-field>
 
-      <mat-form-field class="example-full-width">
+      <mat-form-field appearance="fill">
+        <app-icon class="tch-button__icon" name="map"></app-icon>
         <mat-label>Flying to</mat-label>
-        <input matInput placeholder="" value="">
+        <mat-select>
+          <mat-option value="one">Maroua</mat-option>
+          <mat-option value="one">Garoua</mat-option>
+          <mat-option value="one">Ngaoundere</mat-option>
+          <mat-option value="one">Douala</mat-option>
+          <mat-option value="two">Yaounde</mat-option>
+          <mat-option value="two">Bafoussam</mat-option>
+        </mat-select>
       </mat-form-field>
 
+      <mat-form-field>
+        <app-icon class="tch-button__icon" name="date"></app-icon>
+        <mat-label>Departure date</mat-label>
+        <input matInput [matDatepicker]="departurePicker1" readonly formControlName="departureDate"
+          (click)="departurePicker1.open()" [min]="today">
+        <mat-datepicker #departurePicker1></mat-datepicker>
+      </mat-form-field>
 
-
-      
-
-    <mat-form-field>
-      <mat-label>Departure date</mat-label>
-      <input matInput [matDatepicker]="departurePicker2" readonly formControlName="departureDate"
-        (click)="departurePicker2.open()" [min]="today">
-      <mat-datepicker-toggle matSuffix [for]="departurePicker2"></mat-datepicker-toggle>
-      <mat-datepicker #departurePicker2></mat-datepicker>
-    </mat-form-field>
-
-
-    <mat-form-field>
-      <mat-label>Arrival date</mat-label>
-      <input matInput [matDatepicker]="arrivalPicker" readonly formControlName="arrivalDate"
-        (click)="arrivalPicker.open()" [min]="today">
-      <mat-datepicker-toggle matSuffix [for]="arrivalPicker"></mat-datepicker-toggle>
-      <mat-datepicker #arrivalPicker></mat-datepicker>
-    </mat-form-field>
+      <mat-form-field>
+        <app-icon class="tch-button__icon" name="date"></app-icon>
+        <mat-label>Departure date</mat-label>
+        <input matInput [matDatepicker]="arrivalPicker" readonly formControlName="departureDate"
+          (click)="arrivalPicker.open()" [min]="today">
+        <mat-datepicker #arrivalPicker></mat-datepicker>
+      </mat-form-field>
 
       <mat-form-field class="example-full-width">
+        <app-icon class="tch-button__icon" name="user"></app-icon>
         <mat-label>Number of passengers</mat-label>
         <input matInput placeholder="" value="">
       </mat-form-field>
 
       <mat-form-field class="example-full-width">
+        <app-icon class="tch-button__icon" name="briefcase"></app-icon>
         <mat-label>Class</mat-label>
         <input matInput placeholder="" value="">
       </mat-form-field>
 
-
-
       <footer>
-        <button mat-raised-button color="primary">Primary</button>
+        <button class="tch-button tch-button-icon tch-full-width">
+          <span class="tch-button__label">See results</span>
+
+          <app-icon class="tch-button__icon" name="arrow-right"></app-icon>
+        </button>
       </footer>
     </form>
   </mat-tab>

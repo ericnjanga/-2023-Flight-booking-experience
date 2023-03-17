@@ -1,0 +1,40 @@
+/**
+ * Buttons
+ * --------------------------------------
+*/
+.tch-button {
+    border-width: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 46px;
+    border-radius: 4px;
+    background-color: $primary;
+
+    &.tch-full-width {
+        width: 100%;
+    }
+
+    .tch-button__label {
+        display: flex;
+        align-items: center;
+        color: #fff;
+        @include type-button();
+    }
+
+    .tch-button__icon {
+        margin-left: 15px;
+    }
+}
+
+// Make sure text and icon are perfectly aligned (middle)
+.tch-button.tch-button-icon {
+    .tch-button__icon {
+      display: block;
+      height: 14px;
+    }
+    .tch-button__label {
+      position: relative;
+      top: -2px;
+    }
+}

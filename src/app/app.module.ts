@@ -51,6 +51,7 @@ import { PrinceAndAirlineComponent } from './components/molecules/prince-and-air
 import { DepartureAirportToArrivalAirportComponent } from './components/molecules/departure-airport-to-arrival-airport/departure-airport-to-arrival-airport.component';
 import { FlightDateComponent } from './components/atoms/flight-date/flight-date.component';
 import { ButtonComponent } from './components/atoms/button/button.component';
+import { IconComponent } from './components/atoms/icon/icon.component';
 
 registerLocaleData(LocaleCm);
 
@@ -88,7 +89,8 @@ registerLocaleData(LocaleCm);
     PrinceAndAirlineComponent,
     DepartureAirportToArrivalAirportComponent,
     FlightDateComponent,
-    ButtonComponent
+    ButtonComponent,
+    IconComponent
   ],
   imports: [
     BrowserModule,

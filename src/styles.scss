@@ -1,8 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
 
-@import './assets/css/typography.scss';
-@import './assets/css/variables.scss';
-@import './assets/css/mixins.scss';
+@import './assets/css/typography';
+@import './assets/css/variables';
+@import './assets/css/mixins';
+@import './assets/css/overrides/material-ui-forms';
+@import './assets/css/custom/forms';
 @import url(https://fonts.googleapis.com/icon?family=Material+Icons);
 
 html,
@@ -20,67 +22,7 @@ body {
 
 
 
-mat-form-field {
-  width: 100%;
-}
 
-form {
-margin-top: 20px;
-}
-
-
-
-
-
-/**
- * Text-fields
- * --------------------------------------
-*/
-.mdc-text-field--filled:not(.mdc-text-field--disabled) {
-  background: #fff;
-}
-.mat-mdc-form-field-infix {
-  .tch-button__icon {
-    position: absolute;
-    top: 15px;
-  }
-  .mdc-floating-label {
-    padding-left: 30px;
-  }
-}
-
-
-
-
-
-/**
- * Buttons
- * --------------------------------------
-*/
-.tch-button {
-  border-width: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 46px;
-  border-radius: 4px;
-  background-color: $primary;
-
-  &.tch-full-width {
-    width: 100%;
-  }
-
-  .tch-button__label {
-      display: flex;
-      align-items: center;
-      color: #fff;
-      @include type-button();
-  }
-
-  .tch-button__icon {
-    margin-left: 15px;
-  }
-}
 
 
 // *.flex {
