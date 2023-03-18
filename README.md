@@ -3,10 +3,11 @@
 
 ## About this project ----------------------------
 (Coming soon)
+Stacks: Angular, Material UI
 
 
 ## Application features --------------------------
-(Coming soon)
+- Flights and booking search using reactive forms
 
 
 ## Development Instructions ----------------------
